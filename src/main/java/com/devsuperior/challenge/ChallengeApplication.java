@@ -34,7 +34,7 @@ public class ChallengeApplication implements CommandLineRunner {
 		double discount = sc.nextDouble();
 		Order order = new Order(code, basic, discount);
 
-		System.out.printf("Pedido código %d%n", code);
+		System.out.printf("Pedido código %d%n", order.getCode());
 		System.out.printf("Valor total: R$ %.2f%n", orderService.total(order));
 	}
 }
